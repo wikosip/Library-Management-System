@@ -21,5 +21,6 @@ The project follows a **Layered Architecture** approach, separating business log
 How to Run:
 1. Clone the repository.
 2. Update the connection string in `appsettings.json`.
-3. Run `Update-Database` in Package Manager Console.
-4. Start the application.
+3. Rebuild Solution.
+4. Run `Update-Database` in Package Manager Console.
+5. Start the application.
