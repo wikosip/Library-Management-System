@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Group-20\\Library.App\\Library.App.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Catalog\\Library-Management-System\\Library.App\\Library.App.csproj",
       "projectName": "Library.App",
-      "projectPath": "D:\\Group-20\\Library.App\\Library.App.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\Catalog\\Library-Management-System\\Library.App\\Library.App.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Group-20\\Library.App\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\Catalog\\Library-Management-System\\Library.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
