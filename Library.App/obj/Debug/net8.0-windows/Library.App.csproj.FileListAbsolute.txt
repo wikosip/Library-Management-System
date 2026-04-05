@@ -1,0 +1,15 @@
+D:\Group-20\Library.App\bin\Debug\net8.0-windows\Library.App.exe
+D:\Group-20\Library.App\bin\Debug\net8.0-windows\Library.App.deps.json
+D:\Group-20\Library.App\bin\Debug\net8.0-windows\Library.App.runtimeconfig.json
+D:\Group-20\Library.App\bin\Debug\net8.0-windows\Library.App.dll
+D:\Group-20\Library.App\bin\Debug\net8.0-windows\Library.App.pdb
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.AssemblyInfoInputs.cache
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.AssemblyInfo.cs
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.csproj.CoreCompileInputs.cache
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.sourcelink.json
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.dll
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\refint\Library.App.dll
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.pdb
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\Library.App.genruntimeconfig.cache
+D:\Group-20\Library.App\obj\Debug\net8.0-windows\ref\Library.App.dll
