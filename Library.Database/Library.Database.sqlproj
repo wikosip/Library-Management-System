@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Library.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{51e3343d-ece1-4234-b91f-7c7ecdac170a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Library.Database</RootNamespace>
+    <AssemblyName>Library.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Countries.sql" />
+    <Build Include="dbo\Tables\Cities.sql" />
+    <Build Include="dbo\Tables\Positions.sql" />
+    <Build Include="dbo\Tables\Employees.sql" />
+    <Build Include="dbo\Tables\Customers.sql" />
+    <Build Include="dbo\Tables\Genres.sql" />
+    <Build Include="dbo\Tables\Publishers.sql" />
+    <Build Include="dbo\Tables\Nationalities.sql" />
+    <Build Include="dbo\Tables\Authors.sql" />
+    <Build Include="dbo\Tables\Languages.sql" />
+    <Build Include="dbo\Tables\Books.sql" />
+    <Build Include="dbo\Tables\BookLanguages.sql" />
+    <Build Include="dbo\Tables\BookAuthors.sql" />
+    <Build Include="dbo\Tables\Conditions.sql" />
+    <Build Include="dbo\Tables\BookInstances.sql" />
+    <Build Include="dbo\Tables\MembershipTypes.sql" />
+    <Build Include="dbo\Tables\CustomerMemberships.sql" />
+    <Build Include="dbo\Tables\Payments.sql" />
+    <Build Include="dbo\Tables\MembershipPayments.sql" />
+    <Build Include="dbo\Tables\BookLoans.sql" />
+    <Build Include="dbo\Tables\BookLoanPayments.sql" />
+    <Build Include="dbo\Tables\UserAccounts.sql" />
+    <Build Include="dbo\Tables\Roles.sql" />
+    <Build Include="dbo\Tables\UserRoles.sql" />
+    <Build Include="dbo\Tables\Permissions.sql" />
+    <Build Include="dbo\Tables\RolePermissions.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertGenre.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateGenre.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteGenre.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertPermission.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdatePermission.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeletePermission.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteCountry.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteCity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteCondition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertMembershipType.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateMembershipType.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteMembershipType.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertCustomerMembership.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateCustomerMembership.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteCustomerMembership.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AssignLanguageToBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UnassignLanguageFromBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AssignAuthorToBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UnassignAuthorFromBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertNationality.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateNationality.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteNationality.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertPublisher.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdatePublisher.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeletePublisher.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertAuthor.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateAuthor.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteAuthor.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AssignPermissionToRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UnassignPermissionFromRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertPosition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdatePosition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeletePosition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertEmployee.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateEmployee.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteEmployee.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertBookInstance.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateBookInstance.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteBookInstance.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateBookLoan.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertPayment.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdatePayment.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertMembershipPayment.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SeedDatabase.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ClearDatabase.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteUserAccount.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertBook.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertCity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertCondition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertCountry.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertUserAccount.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertUserRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateCity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateCondition.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateCountry.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateRole.sql" />
+    <Build Include="dbo\Stored Procedures\usp_UpdateUserAccount.sql" />
+    <Build Include="dbo\Stored Procedures\usp_InsertBookLoan.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish-Dev.publish.xml" />
+    <None Include="Publish-Test.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Library.Database.refactorlog" />
+  </ItemGroup>
+</Project>
